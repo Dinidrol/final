@@ -118,12 +118,47 @@
   margin-right: 0px;
 }
 
-.header-bottom-container .header-bottom-drop p {
+.header-bottom-container .header-bottom-social .social:hover {
+  background: #ad5c5c;
+}
+
+.header-bottom-container .header-bottom-drop {
+  display: inline-block;
+  width: 115px;
+  height: 35px;
   background-color: black;
+  margin-top: 45px;
+  position: relative;
+}
+
+.header-bottom-container .header-bottom-drop p {
+  text-align: center;
   color: white;
   text-transform: uppercase;
-  padding-top: 14px;
-  padding-left: 36px;
+  margin-top: 10px;
+}
+
+.header-bottom-container .header-bottom-drop .sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #303030;
+  z-index: 23;
+  top: 35px;
+  left: 0px;
+}
+
+.header-bottom-container .header-bottom-drop .sub-menu li {
+  padding: 9px 7px 9px 40px;
+}
+
+.header-bottom-container .header-bottom-drop .sub-menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.header-bottom-container .header-bottom-drop:hover .sub-menu {
+  display: block;
 }
 
 .banner {
@@ -140,11 +175,17 @@
           justify-content: center;
 }
 
-.banner-bacground img {
+.banner-bacground img:nth-child(1) {
   min-width: 100%;
 }
 
-.banner-bacground input {
+.banner-bacground img:nth-child(2) {
+  position: absolute;
+  z-index: 223;
+  top: 115px;
+}
+
+.banner-bacground a {
   position: absolute;
   top: 485px;
   border: none;
@@ -154,6 +195,17 @@
   color: white;
   font-size: 34px;
   text-transform: uppercase;
+  text-decoration: none;
+  z-index: 22;
+}
+
+.banner-bacground a p {
+  text-align: center;
+  padding-top: 19px;
+}
+
+.banner-bacground a:hover {
+  background-color: #c59372;
 }
 
 .support-container {
@@ -235,6 +287,14 @@
 
 .items-container a img:nth-child(3) {
   position: absolute;
+  bottom: 3px;
+  left: 55px;
+  z-index: 2;
+  display: none;
+}
+
+.items-container a img:nth-child(4) {
+  position: absolute;
   left: 15px;
   top: 15px;
   z-index: 2;
@@ -255,6 +315,14 @@
   font-size: 2em;
   -webkit-box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.4);
+}
+
+.items-container a:hover:after img:nth-child(3) {
+  display: block;
+}
+
+.items-container a:hover img:nth-child(3) {
+  display: block;
 }
 
 @-webkit-keyframes rotate {
@@ -389,6 +457,10 @@
   color: black;
   line-height: 50px;
   font-size: 25px;
+}
+
+.footer-container-connect-group-social:hover {
+  background: #ad5c5c;
 }
 
 .footer-container-connect-subcribe {

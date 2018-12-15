@@ -3,6 +3,7 @@ $footer-background-color: #141414;
 $border-color: black;
 $text-color: black;
 $baner-backround-img: url(/img/Layer3.png);
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -81,25 +82,49 @@ $baner-backround-img: url(/img/Layer3.png);
                     line-height: 35px;
                     font-size: 20px;
                 }
+
             }
             .social:last-child{
                 margin-right: 0px;
             }
+            .social:hover{
+                background:#ad5c5c;
+            }
 
         }
         .header-bottom-drop{
-            // margin-top: 40px;
-            // margin-left: 80px;
+            display: inline-block;
+            width: 115px;
+            height: 35px;
+            background-color: black;
+            margin-top: 45px;
+            position: relative;
             p{
-                // width: 115px;
-                // height: 35px;
-                background-color: black;
+                text-align: center;
                 color: white;
                 text-transform: uppercase;
-                padding-top: 14px;
-                padding-left: 36px;
+                margin-top: 10px;
+            }
+            .sub-menu{
+                display: none;
+                position: absolute;
+                background-color: #303030;
+                z-index: 23;
+                top: 35px;
+                left: 0px;
+                li{
+                    padding: 9px 7px 9px 40px;
+                    a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: white;
+                    }
+                }
             }
             
+        }
+        .header-bottom-drop:hover .sub-menu{
+            display: block;
         }
     }
 }
@@ -109,10 +134,17 @@ $baner-backround-img: url(/img/Layer3.png);
     &-bacground{
         display: flex;
         justify-content: center; 
-        img{
+        img:nth-child(1){
+            // position: absolute;
             min-width: 100%;
         }
-        input{
+        img:nth-child(2){
+            position: absolute;
+            z-index: 223;
+            top:115px
+        }
+
+        a{
             position: absolute;
             top: 485px;
             border: none;
@@ -122,7 +154,17 @@ $baner-backround-img: url(/img/Layer3.png);
             color: white;
             font-size: 34px;
             text-transform: uppercase;
+            text-decoration: none;
+            z-index: 22;
+            p{
+                text-align: center;
+                padding-top: 19px;
+            }
         }
+        a:hover{
+            background-color: #c59372;
+        }
+        
     }
 }
 .support{
@@ -188,6 +230,13 @@ $baner-backround-img: url(/img/Layer3.png);
             }
             img:nth-child(3){
                 position: absolute;
+                bottom: 3px;
+                left: 55px;
+                z-index: 2;
+                display: none;
+            }
+            img:nth-child(4){
+                position: absolute;
                 left: 15px;
                 top: 15px;
                 z-index: 2;
@@ -204,6 +253,13 @@ $baner-backround-img: url(/img/Layer3.png);
             background-color: rgba(0,0,0,0.4);
             font-size: 2em;
             box-shadow: 0 0 0 10000px rgba(0,0,0,0.4);
+            img:nth-child(3){
+                display: block;
+            }
+
+        }
+        a:hover img:nth-child(3){
+            display: block;
         }
         @-webkit-keyframes rotate {
             from {transform: rotateY(0deg);}
@@ -304,6 +360,10 @@ $baner-backround-img: url(/img/Layer3.png);
                         line-height: 50px;
                         font-size: 25px;
                     }
+
+                }
+                &-social:hover{
+                    background: #ad5c5c;
                 }
             }
             &-subcribe{
