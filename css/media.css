@@ -1,0 +1,44 @@
+@media (max-width: 1350px) {
+  .support-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .support-container img:nth-child(odd) {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .wrapper {
+    width: 960px;
+  }
+  .header-bottom-container .header-bottom-links li:last-child {
+    margin-right: 45px;
+  }
+}
+
+@media (max-width: 960px) {
+  .wrapper {
+    width: 768px;
+  }
+  .header-bottom-container .header-bottom-links li {
+    display: none;
+  }
+  .header-bottom-container .header-bottom-links li:first-child {
+    display: block;
+  }
+  .header-bottom-container .header-bottom-social {
+    display: none;
+  }
+  .footer-container .footer-container-shops {
+    display: none;
+  }
+  .footer-container .footer-container-information {
+    display: none;
+  }
+  .footer-container .footer-container-servise {
+    display: none;
+  }
+}
+/*# sourceMappingURL=media.css.map */

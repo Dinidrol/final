@@ -1,0 +1,53 @@
+@media (max-width:1350px){
+    .support-container{
+        justify-content: center;
+        img:nth-child(odd){
+            display: none;
+        }
+    }
+}
+@media (max-width:1300px){
+    .wrapper{
+        width: 960px;
+    }
+    .header-bottom{
+        &-container{
+            .header-bottom-links{
+                li:last-child{
+                    margin-right: 45px;
+                }
+            }
+        }
+    } 
+}
+@media (max-width:960px){
+    .wrapper{
+        width: 768px;
+    }
+    .header-bottom{
+        &-container{
+            .header-bottom-links{
+                li{
+                    display: none;
+                }
+                li:first-child{
+                    display: block;
+                }
+            }
+            .header-bottom-social{
+                display: none;
+            }
+        }
+    }
+    .footer-container{
+        .footer-container-shops{
+            display: none;
+        }
+        .footer-container-information{
+            display: none;
+        }
+        .footer-container-servise{
+            display: none;
+        }
+    }
+}
