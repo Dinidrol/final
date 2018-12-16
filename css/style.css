@@ -99,6 +99,7 @@
 }
 
 .header-bottom-container .header-bottom-social .social {
+  cursor: pointer;
   margin-top: 44px;
   margin-right: 10px;
   width: 35px;
@@ -129,6 +130,7 @@
   background-color: black;
   margin-top: 45px;
   position: relative;
+  border-bottom: 2px solid red;
 }
 
 .header-bottom-container .header-bottom-drop p {

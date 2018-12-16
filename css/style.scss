@@ -70,6 +70,7 @@ $baner-backround-img: url(/img/Layer3.png);
         .header-bottom-social{
             display: flex;
             .social{
+                cursor: pointer;
                 margin-top: 44px;
                 margin-right: 10px;
                 width: 35px;
@@ -99,6 +100,7 @@ $baner-backround-img: url(/img/Layer3.png);
             background-color: black;
             margin-top: 45px;
             position: relative;
+            border-bottom: 2px solid red;
             p{
                 text-align: center;
                 color: white;
